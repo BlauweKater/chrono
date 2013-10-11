@@ -1,0 +1,56 @@
+body{
+   background-repeat:no-repeat;
+   background-size:100%;
+   text-align:center;
+}
+
+.ctrlbtn{
+   height: 3em;
+   background:#aaaaaa;
+   color:black;
+}
+
+#clock{
+   font-size: 400%;
+   font-family: "arial black";
+}
+/* portrait */
+@media screen and (orientation:portrait) {
+   * {margin: 0; padding: 0;}
+
+   body{
+      background:gray;
+      background-image:url('chrono_portrait.jpg');
+   }
+
+   #clock{ 
+      margin-top:10%;
+   }
+   
+   .ctrlbtn{
+      width: 30%;
+      margin-top:80%; 
+   }
+}
+
+
+
+/* landscape */
+@media screen and (orientation:landscape) {
+   body{
+      background:#704214;
+      background-image:url('chrono_landscape.jpg');
+      height:100%;
+   }
+
+   .ctrlbtn{
+      display:block;
+      width:25%;
+      margin-top:10%;  
+   }
+
+   #clock{
+      float:right;
+      margin-right:5%;
+   }
+}
